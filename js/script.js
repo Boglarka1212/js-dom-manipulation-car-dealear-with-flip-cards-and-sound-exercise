@@ -37,31 +37,29 @@ if (sectionOne) {
 
 // NYT NYT Vanilla JS
 
-const soundDog = new Audio("../sound/dog.wav");
-const soundHorse = new Audio("../sound/horse.wav");
-const soundBear = new Audio("../sound/bear.wav");
+const soundCar = new Audio("../sound/car-engine-sound.mp3");
 
-const horseCard = document.getElementById("horseCard");
-const bearCard = document.getElementById("bearCard");
-const dogCard = document.getElementById("dogCard");
+const car1 = document.querySelector("#car1");
+const car2 = document.querySelector("#car2");
+const car3 = document.querySelector("#car3");
 
-if (horseCard) {
-   horseCard.addEventListener("click", function() {
-      soundHorse.play();
-      horseCard.classList.toggle("flipped");
+if (car1) {
+   car1.addEventListener("click", function() {
+      soundCar.play();
+      car1.classList.toggle("flipped");
    });
 }
 
-if (bearCard) {
-   bearCard.addEventListener("click", function() {
-      soundBear.play();
-      bearCard.classList.toggle("flipped");
+if (car2) {
+   car2.addEventListener("click", function() {
+      soundCar.play();
+      car2.classList.toggle("flipped");
    });
 }
 
-if (dogCard) {
-   dogCard.addEventListener("click", function() {
-      soundDog.play();
-      dogCard.classList.toggle("flipped");
+if (car3) {
+   car3.addEventListener("click", function() {
+      soundCar.play();
+      car3.classList.toggle("flipped");
    });
 }
